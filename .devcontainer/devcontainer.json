@@ -1,7 +1,7 @@
 {
     "name": "My Dev Container",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/catkin_ws/src/quad_ufabc,type=bind",
-    "workspaceFolder": "/home/catkin_ws/src/quad_ufabc",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/catkin_ws/src/quad_ufabc2,type=bind",
+    "workspaceFolder": "/home/catkin_ws/src/quad_ufabc2",
     "runArgs": [
         "--rm",
         "--privileged"
@@ -24,7 +24,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "postStartCommand": "/home/catkin_ws/src/quad_ufabc/startup.sh",
+    "postStartCommand": "/home/catkin_ws/src/quad_ufabc2/startup.sh",
     "forwardPorts": [
         8080,
         8888
